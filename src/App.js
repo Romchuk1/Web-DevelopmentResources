@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import GameCard from "./components/ProductCard";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+
+      <GameCard
+        title="CS_2"
+        genre="Action"
+        platform="PC"
+      />
+
+      <GameCard
+        title="Dota2"
+        genre="Action"
+        platform="PC"
+      />
+
+      <GameCard
+        title="FIFA 25"
+        genre="Sports"
+        platform="Xbox"
+      />
+
+      <Footer />
     </div>
   );
 }
